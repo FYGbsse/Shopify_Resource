@@ -1,0 +1,22 @@
+How to Add a Zoom slider using Magnific Popup
+
+Source: https://dimsemenov.com/plugins/magnific-popup/
+video : https://www.youtube.com/watch?v=QVetGEogYy0
+
+Process:
+
+header or theme.liquid
+
+ <link rel="stylesheet" href="{{ 'magnific-popup.css' | asset_url }}">
+ 
+ {%- if page.handle == 'weddings' or  page.handle == 'event-decoration' -%}
+      <script src="https://code.jquery.com/jquery-3.6.1.min.js" ></script>
+      <script src="{{ 'eweb-row-image-zoom.js' | asset_url }}" defer></script>
+ {% endif %}
+	  
+
+section: Add file section.txt and name the file as "eweb-block-image-row.liquid"
+
+snippet:  Add file snippet.txt and name the file as "eweb-block-image-row.liquid"
+
+assest:  Add js file js-code.txt and name the file as "eweb-row-image-zoom.js"

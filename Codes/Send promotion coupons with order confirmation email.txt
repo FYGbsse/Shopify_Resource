@@ -1,0 +1,84 @@
+{% assign activate_coupon = true %}
+
+
+{% if activate_coupon == true %}
+{% assign continerbox = '' %}
+{% assign ever_applied = false %}
+{% assign default_coupon = '' %}
+{% if subtotal_price >= 8800 %}
+{% assign total_coupon = "CNYVOUCHER#%010&,CNYVOUCHER#%110&,CNYVOUCHER#%210&,CNYVOUCHER#%310&,CNYVOUCHER#%410&,CNYVOUCHER#%510&,CNYVOUCHER#%610&,CNYVOUCHER#%710&,CNYVOUCHER#%810&,CNYVOUCHER#%910&,CNYVOUCHER#%101&,CNYVOUCHER#%201&,CNYVOUCHER#%301&,CNYVOUCHER#%401&,CNYVOUCHER#%501&" | split: "," %}
+{% for current_coupon in total_coupon %}
+
+{% if default_coupon =='' %}
+{% assign default_coupon = current_coupon %}
+{% endif %}
+
+{% assign break_outer = false %}
+{% for order in customer.orders %}
+{% for discount_application in order.discount_applications %}
+{% if discount_application.title != blank %}
+{% assign ever_applied = true %}
+{% if discount_application.title == current_coupon %}
+{% assign continerbox = '' %}
+{% assign break_outer = true %}
+{% break %}
+{% else %}
+{% assign continerbox = current_coupon %}
+{% endif %}
+
+{% endif %}
+{% endfor %}
+
+{% if break_outer == true %}
+{% break %}
+{% endif%}
+{% endfor %}
+
+{% if break_outer == true %}
+{% continue %}
+{% endif %}
+
+{% if ever_applied == true %}
+{% if continerbox != blank %}
+<br>
+<p>Enjoy $25 off your next purchase with e-Voucher: <strong style="color:#cba264;">{{continerbox}}</strong> <br>Your e-Voucher is valid from 15 February 2022 to 30 June 2022.</p>
+{% break %}
+{% endif %}
+{% endif %}
+
+{% endfor %}
+
+
+{% if ever_applied == false and default_coupon!='' %}
+<br>
+<p>Enjoy $25 off your next purchase with e-Voucher: <strong style="color:#cba264;">{{default_coupon}}</strong> <br>Your e-Voucher is valid from 15 February 2022 to 30 June 2022.</p>
+{% endif %}
+
+{% endif %}
+
+{% endif %}
+
+
+
+Note: Paste it after
+<tr class="subtotal-line">
+  <td class="subtotal-line__title">
+    <p>
+      <span>Refund</span>
+        <br>
+        <small>{{ refund_method_title | capitalize }}</small>
+    </p>
+  </td>
+  <td class="subtotal-line__value">
+    <strong>- {{ transaction.amount | money }}</strong>
+  </td>
+</tr>
+
+            {% endif %}
+          {% endfor %}
+        </table>
+      {% endif %}
+    </td>
+  </tr>
+</table>
+- here paste

@@ -1,0 +1,44 @@
+Theme Kit installation
+
+Installing Chocolaty
+https://www.youtube.com/watch?v=-5WLKu_J_AE 
+   https://chocolatey.org/install
+
+Installing theme kit 
+https://shopify.dev/themes/tools/theme-kit/getting-started#windows
+ run commend in powershell or commend line
+ 
+Create an app or install app
+     give theme perrmission from admin api
+     copy access token
+     get theme id and store name
+
+Create a folder where to work
+     Open terminal in folder directory
+     either create a config.yml file and paste code for connection
+				  development:
+				  password: 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[access token]
+				  theme_id: "74500735055" 
+				  store: online-asian-handicraft.myshopify.com
+     or 
+     update the crededitals and run this commond in terminal 
+  	 theme get --password=[your-theme-kit-password] --store="[your-store.myshopify.com]" --themeid=[your-theme-id]
+     After this run commond in   terminal  theme download 
+	 usinng commond theme download 
+
+Set Ingore files 	 
+ 
+ 
+2nd method
+https://www.youtube.com/watch?v=r3B-ayYWS3c
+
+
+resources:
+https://www.youtube.com/watch?v=SrtOXwjXJ1w
+https://shopify.dev/apps/auth/admin-app-access-tokens
+https://shopify.dev/themes/tools/theme-kit/command-reference
+https://www.youtube.com/watch?v=I39yw9-5ERM
+https://www.youtube.com/watch?v=n0Y0kaxyBTk
+https://www.youtube.com/watch?v=3aMvc2z5CcY
+
+

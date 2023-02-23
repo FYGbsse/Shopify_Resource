@@ -1,0 +1,27 @@
+SETTING DEVELOPMENT ENVIRONMENT OFFLINE
+
+Note:After following and implememting instrutions in 6 part.
+
+1.Open link 
+  https://shopify.github.io/themekit/commands/#download
+  a)To download only theme use link 
+     theme download templates/404.liquid templates/article.liquid  -A
+    
+
+   b)To download theme with all assets use this link
+      theme get --list -p=[your-api-password] -s=[your-store.myshopify.com] -B
+  
+   Copy either of these in notepad
+
+2.Open shopify store -> go to app -> Click manage private app ->
+
+   fill form by naming and putting emailand save
+
+   a) Copy api password and paste in B code.
+   b) Similarly copy and paste store name and store id.
+
+3. Create a Folder and name it.
+   a) Open powershell in that folder and paste the code,this will install all 
+     the theme 
+      
+4.Open that theme in any code editor

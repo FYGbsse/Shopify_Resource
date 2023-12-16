@@ -1,19 +1,19 @@
 learning link
-https://www.youtube.com/watch?v=0274iR1XENE&list=PLB4AdipoHpxbTycAd8VriLJoROLb3hYmh                                                                                     created                          tested
+https://www.youtube.com/watch?v=0274iR1XENE&list=PLB4AdipoHpxbTycAd8VriLJoROLb3hYmh                                                                                     created                                              tested
 
 checklist
 A DEVELOPMENT PHASE
-1 add products                                                                      working 
-2 add collections                                                                   working
-3 add theme and customize                                                           working
+1 add products                                                                       
+2 add collections                                                                   
+3 add theme and customize                                                           
                 customize using editor 
                 customization using coding
-4) domain                                                                           not statred 
-5)about us page - buusiness mission people who run it                               WORKED                           
-6)contact us page                                                                   worked                           tested                                            
+4) domain                                                                             
+5)about us page - buusiness mission people who run it                                                          
+6)contact us page                                                                                                                
 7) f/q
-8)create menu                                                                       working
-9)location of store ,payment - transaction and credit card bill and fee             worked
+8)create menu                                                                       
+9)location of store ,payment - transaction and credit card bill and fee             
 10)taxes
 11)terms and services/currence
 12 shipping /delivcery time ,rate
